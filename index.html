@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>weather</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-1">
+       <form class=search-form=" id="search-form">
+        <div class="input-group mb-3">
+            <input 
+            type="text" 
+            class="form-control" 
+            placeholder="Type a city..." 
+            aria-label="Recipient's username" 
+            aria-describedby="button-addon2" 
+            id="city-input";
+            input="city-input">
+            <button class="btn btn-outline-secondary" 
+            type="button" 
+            id="button-addon2">Search</button>
+          </div>
+    <h1 id="city">
+      Copenhagen
+    </h1>
+    <ul>
+      <li id="date"></li>
+      <li id="description"></li>
+    </ul>
+  <div class="row">
+    <div class="col-6">
+        <img
+        class="wob_tci"
+        alt="Înnorat"
+        src="//ssl.gstatic.com/onebox/weather/64/cloudy.png"
+        id="wob_tci"
+        data-atf="1"
+        data-frt="0"
+        
+      />
+      
+      <span class="temperature" id="temperature"></span>
+      <span class="units">°C</span>
+      
+
+    </div>
+    <div class="col6">
+      <ul>
+        <li>Humidity: <span id="humidity"></span>%</li>
+        <li>Wind: <span id="wind"></span> km/h</li>
+      </ul>
+    </div>
+  </div>
+    
+    
+    <script src="src/index.js"></script>
+  </body>
+</html>
